@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['mpdm.kyoji@googlemail.com']
 
   spec.summary       = %q{Calculator shipping fee for Amazon JP}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.description   = %q{Calculator shipping fee for Amazon JP}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = 'MIT'
 
