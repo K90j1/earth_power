@@ -8,17 +8,17 @@ require 'earth_power/version'
 #See:: https://services.amazon.co.jp/home.html
 #
 
-STORAGE_COEFFICIENT = 8.126
-STORAGE_VALUE = 1000
-CONTRACT_FEE = 100
-SIPPING_TYPE_KEYS = [0, 1, 2, 3, 4, 5, 6, 7, 8]
-SIPPING_TYPE_PACKING = {0 => 525, 1 => 567, 2 => 603, 3 => 1250, 4 => 0, 5 => 87, 6 => 87, 7 => 77, 8 => 99}
-SIPPING_TYPE_WEIGHT = {0 => 0, 1 => 0, 2 => 0, 3 => 0, 4 => 0, 5 => 57, 6 => 85, 7 => 166, 8 => 228}
-INCHES_TO_MM = 0.254
-POUNDS_TO_G = 4.53592
-CARRY_OVER_KG = 6
-
 module EarthPower
+  STORAGE_COEFFICIENT = 8.126
+  STORAGE_VALUE = 1000
+  CONTRACT_FEE = 100
+  SIPPING_TYPE_KEYS = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  SIPPING_TYPE_PACKING = {0 => 525, 1 => 567, 2 => 603, 3 => 1250, 4 => 0, 5 => 87, 6 => 87, 7 => 77, 8 => 99}
+  SIPPING_TYPE_WEIGHT = {0 => 0, 1 => 0, 2 => 0, 3 => 0, 4 => 0, 5 => 57, 6 => 85, 7 => 166, 8 => 228}
+  INCHES_TO_MM = 0.254
+  POUNDS_TO_G = 4.53592
+  CARRY_OVER_KG = 6
+
   @earnings = 0
   @purchase = 0
   @category = ''
@@ -50,6 +50,7 @@ module EarthPower
   #params weight
   #params volume[]
   #
+
   def initialize(earnings, base_cost, purchase, category, sipping_fee, is_fba, is_large_business, is_media, storage_days, weight, volume)
     @earnings = earnings.to_i
     @purchase = purchase.to_i
