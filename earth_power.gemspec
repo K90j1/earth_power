@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['mpdm.kyoji@googlemail.com']
 
   spec.summary       = %q{Calculator shipping fee for Amazon JP}
-  spec.description   = %q{Calculator shipping fee for Amazon JP}
+  spec.description   = %q{am writing first gem, which is a Calculator shipping fee for Amazon JP}
   spec.homepage      = 'https://github.com/K90j1/earth_power'
   spec.license       = 'MIT'
 
